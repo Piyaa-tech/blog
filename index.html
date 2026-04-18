@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: rgb(110, 164, 186);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg1 {
+  background-image:url(images/cricket1.jpg);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2><b>Sports</b></h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Cricket</h2>
+      <h5>Cricket is a bat-and-ball team sport played between two teams of 11 players each on an oval field, featuring<br> a central 22-yard pitch with wickets at both ends</h5>
+      <p><img src="images/cricket1.jpg" style="height:530px;"></p>
+      <p>Gameplay: Two batters are on the field at a time.<br> The bowler delivers six balls (an "over") towards the wicket,<br> aiming to get the batter out<br> (e.g., bowled, caught, leg before wicket).</p>
+      <p>Sunt in culpa qui officia deserunt<br> mollit anim id est laborum consectetur adipiscing elit, sed <br>do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>football</h2>
+      <img src="images/football1.jpg" style="height: 150px; width: 240px;"></p>
+      <p> the world's<span> most popular sport</span>, featuring two teams of 11 players aiming to<br> score by maneuvering a ball into the opponent's goal,<br> primarily using their feet.</p>
+      <p><mark>Key Rules</mark><br> Players cannot use hands or arms,<br> except for goalkeepers within their own penalty area.<br> A match consists of two 45-minute halves.</p>
+    <p><b>Essential Skills:<del>Cricket</del><ins> Football,</ins> requires skills like dribbling,<br> passing, shooting, and heading.</b></p>
+    <p><b>Objective: To outscore the opponent; if both teams score the same, it is a draw, or it goes to extra time/penalty shoot-out.</b></p>
+    <p><b>Origins: Modern football began in 19th-century Britain,,<br> but early versions were recorded in<ins>China</ins> (Tsu' Chu) as early as the third century BC.</b></p>
+</div>
+    <div class="card">
+      <h3>Popular Sports </h3>
+      <p><img src="images/badminton pic.webp" height="200px"; width="240px"><b>badminton</b></p><br>
+      <p><img src="images/kabaddi1.jpg" height="200px"; width="240px"><b>kabbadi</b></p><br>
+      <p><img src="images/swimming1.jpg" height="200px"; width="240px"><b>Swimming</b></p><br>
+
+
+    </div>
+    <div class="card">
+      <h3> Contacts </h3>
+      <p>mail id-kajalpriya8757@Gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
