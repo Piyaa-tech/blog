@@ -17,6 +17,21 @@ body {
   background: white;
 }
 
+.sports {
+  color: blue;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.duniya {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+
+
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
